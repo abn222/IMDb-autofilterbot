@@ -64,14 +64,14 @@ async def start(bot, cmd):
                         print(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"{files.file_name}"
+                    f_caption = f"{file_name} \n @parkboyschat"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
-                    ],
-                    [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🖥️ ℙ𝕒𝕣𝕜 𝕄𝕠𝕧𝕚𝕖𝕤 🖥️', url="parkboyschat")
                     ]
+                    
+                       
+                 
                     ]
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
