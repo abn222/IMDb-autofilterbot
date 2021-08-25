@@ -64,7 +64,7 @@ async def start(bot, cmd):
                         print(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"{file_name} \n @parkboyschat"
+                    f_caption = f"{files.file_name}"
                 buttons = [
                     [
                         InlineKeyboardButton('🖥️ ℙ𝕒𝕣𝕜 𝕄𝕠𝕧𝕚𝕖𝕤 🖥️', url="@parkboyschat")
